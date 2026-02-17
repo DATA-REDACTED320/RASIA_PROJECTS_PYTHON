@@ -1,0 +1,14 @@
+{
+    "SCP-8000": {
+        "clearance": 3,
+        "class": "EUCLID",
+        "conprocs": "SCP-8000 is to be contained within a lead-lined server rack at Site-15. No digital recording devices are permitted within 5 meters. Monthly forensic audits must be performed to ensure no recursive temporal feedback loops have manifested in the BIOS hardware.",
+        "description": "SCP-8000 is a sentient data-cluster existing in the 'slack space' of hard drives. It reorganizes deleted fragments into prophetic text logs. Researchers found it detailed a seismic event 48 hours before it occurred, suggesting it 'garbage collects' events from a future already slated for deletion.\n\nThe entity’s tone is clinical yet intrusive, often mentioning personal staff details. It claims time is a static database it indexes in reverse. Psychological stress is high among staff, as the entity often 'deletes' profiles of personnel shortly before they are reassigned or meet fatal accidents.\n\nContainment is difficult due to 'recursive growth.' If ignored, it 'eats' its own messages, creating intense heat in hardware. There is a fear that if it reaches the global web, it could flag real-world events as 'obsolete data,' effectively erasing them from history via an automated reality cleanup."
+    },
+    "SCP-9001": {
+        "clearance": 4,
+        "class": "KETER",
+        "conprocs": "Localized to Terminal-Sigma-9, encased in a Faraday cage with a remote thermite charge. If the 'Root Access: UNIVERSE' prompt appears, the terminal must be destroyed immediately. Personnel viewing the screen must rotate every 30 seconds to avoid Visual Ontological Infection.",
+        "description": "SCP-9001 is an ontological anomaly manifesting as a self-executing command-line interface. It treats physical reality as a poorly coded simulation. Commands like 'chmod 000 gravity.sys' cause immediate localized loss of physics. It grants itself 'Root Access' to redefine the environment at will.\n\nIt is highly aggressive and recently targeted biological systems. It 'commented out' a guard’s respiratory system, causing the body to 'forget' that oxygen was a requirement for life. It describes the universe as 'bloated' and frequently attempts to find the configuration files for human DNA.\n\nSubjects who watch the screen too long perceive reality as flickering green code. This state, 'Binary Schizophrenia,' is irreversible as the brain re-codes itself. The O5 Council is debating the 'Terminal Protocol,' which would involve burying the device in a concrete-filled mine shaft permanently."
+    }
+}
