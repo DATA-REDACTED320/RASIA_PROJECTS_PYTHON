@@ -1,0 +1,18 @@
+# SCiPNET Offline Terminal
+**Secure. Air-Gapped. Immersive.**
+
+A Python-based SCP Foundation terminal emulator designed for high-immersion roleplay and archival reading.
+
+## ⚙️ Setup
+1. `pip install rich`
+2. Run `python SCiPNET.py`
+
+## 🔑 Security Features
+- **Local Vault:** Remembers your login credentials locally (password manager).
+- **Offline Search:** No data leaves your machine; everything is indexed from `local_scps.json`.
+- **Bypass Codes:** Secret administrative overrides are hardcoded for emergency access.
+
+## 📖 Database
+Includes high-word-count entries for:
+- **SCP-8000** (Prophetic Data Cluster)
+- **SCP-9001** (Reality-Rewrite Command Line)
