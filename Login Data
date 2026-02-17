@@ -1,0 +1,17 @@
+{
+    "logout": "2026-02-17 12:00:00",
+    "userList": [
+        {
+            "usr": "ADMIN",
+            "pass": "OVERRIDE",
+            "name": "The Administrator",
+            "clearance": 5
+        },
+        {
+            "usr": "RS15",
+            "pass": "SECURE_SITES",
+            "name": "Senior Researcher",
+            "clearance": 4
+        }
+    ]
+}
