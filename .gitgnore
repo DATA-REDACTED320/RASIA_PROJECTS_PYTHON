@@ -1,0 +1,7 @@
+# Local session vault (Password Manager storage)
+session_vault.json
+
+# Python system files
+__pycache__/
+*.pyc
+.DS_Store
