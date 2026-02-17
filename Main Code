@@ -1,0 +1,73 @@
+import time as tm
+import json
+import re
+import sys
+import os
+from rich.console import Console
+from rich.panel import Panel
+
+console = Console()
+
+class SCiPNET:
+    def __init__(self):
+        self.username = 'GUEST'
+        self.clearance = 0
+        self.wake = False
+        self.session_file = 'session_vault.json'
+
+    def typewriter(self, text, delay=0.001):
+        """Typewriter effect. Press Ctrl+C to show all text immediately."""
+        try:
+            for char in text:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                tm.sleep(delay)
+            print()
+        except KeyboardInterrupt:
+            console.print(text)
+
+    def main(self):
+        os.system('cls' if os.name == 'nt' else 'clear')
+        console.print(Panel("[bold red]SCiPNET DIRECT ACCESS TERMINAL[/bold red]\n[dim]Restricted Access - GitHub Beta v3.2[/dim]"))
+        
+        while True:
+            cmd = input(f"{self.username}@SCiPNET >> ").strip()
+
+            if cmd == "COMMAND: WAKE":
+                self.wake = True
+                console.print("[green]System Online. Checking session vault...[/green]")
+                if os.path.exists(self.session_file):
+                    with open(self.session_file, 'r') as f:
+                        s = json.load(f)
+                        console.print(f"[cyan]Resuming session for {s['usr']}...[/cyan]")
+                        self.username, self.clearance = s['usr'], s['clearance']
+                continue
+
+            if not self.wake:
+                console.print("[yellow]Terminal idle. Use 'COMMAND: WAKE'.[/yellow]")
+                continue
+
+            # --- SECRET CLEARANCE OVERRIDE ---
+            if cmd == "KETER-SILENCE-99":
+                self.username = "OVERRIDE_ROOT"
+                self.clearance = 5
+                console.print("[bold red]!!! SECURITY BYPASS DETECTED. LEVEL 5 ACCESS GRANTED !!![/bold red]")
+
+            elif cmd.startswith("AUTH: "):
+                # (Logic for authentication from previous response goes here)
+                pass
+
+            elif cmd.startswith("SEARCH: "):
+                # (Logic for searching local_scps.json goes here)
+                pass
+
+            elif cmd.startswith("ACCESS: "):
+                # (Logic for reading SCPs with typewriter goes here)
+                pass
+
+            elif cmd == "COMMAND: QUIT":
+                console.print("[red]Connection Terminated.[/red]")
+                break
+
+if __name__ == "__main__":
+    SCiPNET().main()
